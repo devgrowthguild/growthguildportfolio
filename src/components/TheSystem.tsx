@@ -618,12 +618,12 @@ const TheSystem = () => {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                  { category: 'Healthcare', title: 'Medical', image: '/images/website-medical.png', accent: 'text-rose-500 bg-rose-50 border-rose-200', url: 'https://medical-web-design.growthguild.us/' },
-                  { category: 'Trades', title: 'Home Services', image: '/images/website-home-services.png', accent: 'text-blue-600 bg-blue-50 border-blue-200', url: 'http://roofings.growthguild.us/' },
-                  { category: 'Legal', title: 'Law Firm', image: '/images/website-law-firm.png', accent: 'text-amber-600 bg-amber-50 border-amber-200', url: 'http://lawfirm.growthguild.us/' },
-                  { category: 'Real Estate', title: 'Real Estate', image: '/images/website-real-estate.png', accent: 'text-emerald-600 bg-emerald-50 border-emerald-200', url: 'https://prestigerealestate.growthguild.us/' },
-                  { category: 'Fitness', title: 'Coaching', image: '/images/website-coaching.png', accent: 'text-orange-600 bg-orange-50 border-orange-200', url: 'https://coachings.growthguild.us/' },
-                  { category: 'Finance', title: 'Insurance', image: '/images/website-insurance.png', accent: 'text-indigo-600 bg-indigo-50 border-indigo-200', url: 'https://insurance.growthguild.us/' },
+                  { category: 'Healthcare', title: 'Medical', image: '/images/website-medical.png', accent: 'text-rose-500 bg-rose-50 border-rose-200', url: '/templates/medical/' },
+                  { category: 'Trades', title: 'Home Services', image: '/images/website-home-services.png', accent: 'text-blue-600 bg-blue-50 border-blue-200', url: '/templates/home-services/' },
+                  { category: 'Legal', title: 'Law Firm', image: '/images/website-law-firm.png', accent: 'text-amber-600 bg-amber-50 border-amber-200', url: '/templates/legal/' },
+                  { category: 'Real Estate', title: 'Real Estate', image: '/images/website-real-estate.png', accent: 'text-emerald-600 bg-emerald-50 border-emerald-200', url: '/templates/real-estate/' },
+                  { category: 'Fitness', title: 'Coaching', image: '/images/website-coaching.png', accent: 'text-orange-600 bg-orange-50 border-orange-200', url: '/templates/coaching/' },
+                  { category: 'Finance', title: 'Insurance', image: '/images/website-insurance.png', accent: 'text-indigo-600 bg-indigo-50 border-indigo-200', url: '/templates/insurance/' },
                 ].map((item, i) => (
                   <motion.a
                     href={item.url}
