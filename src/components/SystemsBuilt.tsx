@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
 import SystemArchitect from './SystemArchitect';
 
 const systems = [
@@ -49,8 +48,6 @@ const systems = [
 ];
 
 const SystemsBuilt = () => {
-  const navigate = useNavigate();
-
   return (
     <section id="industries" className="py-24 px-4 bg-surface">
       <div className="max-w-6xl mx-auto">
@@ -89,12 +86,12 @@ const SystemsBuilt = () => {
                   </li>
                 ))}
               </ul>
-              <button
-                onClick={() => system.link !== '#' ? navigate(system.link) : undefined}
+              <a
+                href={system.link}
                 className="inline-flex items-center gap-1.5 text-sm font-semibold text-[hsl(var(--golden))] hover:text-[hsl(var(--golden-dark))] transition-colors"
               >
                 View System <ArrowRight size={14} />
-              </button>
+              </a>
             </motion.div>
           ))}
         </div>
